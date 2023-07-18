@@ -24,7 +24,7 @@ OlaMundo();
 
   <Conteudo/>
 
-  <Rodape footer="rodape"/>
+  <Rodape/>
 
   </>
 

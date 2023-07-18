@@ -1,0 +1,18 @@
+.titulo {
+    font-size: 3rem;
+    color: aquamarine;
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.subtitulo{
+    font-size: 2rem;
+    color: aquamarine;
+    background-color: black;
+}
+

@@ -1,3 +1,4 @@
+/*Arquivo Principal. Serve para iniciar a aplicação*/
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -5,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+/*Renderiza aplicação no navegador*/ 
 root.render(
   <React.StrictMode>
     <App />

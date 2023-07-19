@@ -3,7 +3,7 @@
     background: black;
     position: fixed;
       width: 100%;
-      height: 30px;
+      height: 80px;
       padding:20px;
       bottom: 0px;  
 
@@ -16,5 +16,7 @@
 
 
 .date{
-    
+    position: fixed;;
+      bottom: 0px; 
+      color: white;
 }

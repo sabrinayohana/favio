@@ -1,6 +1,7 @@
 .titulo {
     font-size: 2rem;
     color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cabecalho {
@@ -12,7 +13,7 @@
 .subtitulo{
     font-size: 1rem;
     color: aquamarine;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 

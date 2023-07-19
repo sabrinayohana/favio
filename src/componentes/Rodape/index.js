@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Rodape.module.css'
 import { FaFacebook, FaTwitter, FaInstagram} from "react-icons/fa";
 
-
 export default function Rodape() {
  
   function getToday() { 
@@ -23,8 +22,6 @@ export default function Rodape() {
     <div className={styles.icon}> <FaInstagram/> </div> 
   
     </div> 
-     
-
     <p className={styles.date}>{getToday()}</p> </> 
     
     

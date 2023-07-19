@@ -1,7 +1,6 @@
 .titulo {
-    font-size: 3rem;
+    font-size: 2rem;
     color: aquamarine;
-    background-color: black;
 }
 
 .cabecalho {
@@ -11,8 +10,13 @@
 }
 
 .subtitulo{
-    font-size: 2rem;
+    font-size: 1rem;
     color: aquamarine;
-    background-color: black;
+    
+    
 }
 
+.menu{
+    color: aquamarine;
+    
+}

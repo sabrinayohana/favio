@@ -20,7 +20,7 @@ OlaMundo();
   
    {/* Nosso cabecalho tem uma propiedade chamada titulo*/}
 
-  <Cabecalho logo="logo192.png" titulo="Genrenciador de Favoritos" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!"/>
+  <Cabecalho logo="logofavio.png" titulo="GERENCIADOR DE FAVORITOS" subtitulo="O melhor do Brasil"/>
 
   <Conteudo/>
 

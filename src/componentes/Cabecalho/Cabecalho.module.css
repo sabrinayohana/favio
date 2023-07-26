@@ -1,7 +1,8 @@
 .titulo {
     font-size: 2rem;
-    color: aquamarine;
+    color: rgb(127, 200, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
 }
 
 .cabecalho {
@@ -10,14 +11,10 @@
     background-color: black;
 }
 
-.subtitulo{
-    font-size: 1rem;
-    color: aquamarine;
+
+.menu{
+    color: rgb(127, 200, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-.menu{
-    color: aquamarine;
-    
-}

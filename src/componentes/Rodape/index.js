@@ -4,7 +4,9 @@ import { FaFacebook, FaTwitter, FaInstagram} from "react-icons/fa";
 
 export default function Rodape() {
  
+ 
   function getToday() { 
+    
     var today = new Date(); 
     var dd = String(today.getDate()).padStart(2, '0'); 
     var mm = String(today.getMonth() + 1).padStart(2, '0'); 
@@ -23,7 +25,7 @@ export default function Rodape() {
   
     </div> 
     <p className={styles.date}>{getToday()}</p> </> 
-    
+
     
      ) 
 

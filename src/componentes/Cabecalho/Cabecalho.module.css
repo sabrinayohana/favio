@@ -1,20 +1,20 @@
 .titulo {
     font-size: 2rem;
-    color: rgb(127, 200, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C0C0C0;
+    font-family:  'Courier New', monospace;
     justify-content: center;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: #1a472a;
 }
 
 
 .menu{
-    color: rgb(127, 200, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #C0C0C0;
+    font-family: 'Courier New', monospace;
     
 }
 

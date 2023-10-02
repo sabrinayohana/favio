@@ -17,14 +17,13 @@ export default function Rodape() {
   }
 
     return ( 
-    <>     
-    <div className={styles.rodape}> 
-    <div className={styles.icon}> <FaFacebook/> </div> 
-    <div className={styles.icon}> <FaTwitter/> </div> 
-    <div className={styles.icon}> <FaInstagram/> </div> 
+    <footer className={styles.footer}>        
+    <div className={styles.icon}> <FaFacebook/> Facebook </div> 
+    <div className={styles.icon}> <FaTwitter/> Twitter </div> 
+    <div className={styles.icon}> <FaInstagram/> Instagram </div> 
   
-    </div> 
-    <p className={styles.date}>{getToday()}</p> </> 
+     
+    <div className={styles.date}>{getToday()}</div> </footer> 
 
     
      ) 

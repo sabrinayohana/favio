@@ -1,7 +1,9 @@
 import './App.css';
 import Cabecalho from './componentes/Cabecalho'
+import CadrastoUsuario from './componentes/CadrastoUsuario';
 import Conteudo from './componentes/Conteudo';
 import Rodape from './componentes/Rodape';
+import FazerLogin from './componentes/FazerLogin';
 
 
 
@@ -17,7 +19,9 @@ function App() {
     <>
     {/* Nosso cabecalho tem uma propriedade chamada titulo */}
     <Cabecalho logo="slyt.jpg" titulo="Gerenciador de Favoritos" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!!"/>
-    <Conteudo/>
+    <CadrastoUsuario/>
+    <FazerLogin/> 
+    {/* <Conteudo/>*/}
     {/* <Estados/> */}
     <Rodape/>
     </>

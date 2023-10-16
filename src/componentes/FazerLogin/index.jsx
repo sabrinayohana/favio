@@ -12,9 +12,9 @@ function FazerLogin() {
         let senhaCadastrada = usuario.senhaUsuario
 
         if(emailCadastrado === emailUsuario && senhaCadastrada === senhaUsuario) {
-            alert("Senha correta. Bem vindo ao site")
+            alert("Bem vindo ao site!")
         }else{
-            alert("Senha ou email incorretas")
+            alert("Senha ou email incorretos")
         }
     }
 

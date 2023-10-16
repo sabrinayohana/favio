@@ -17,7 +17,7 @@ function CadastroUsuario() {
 
   function validacaoSenha(senhaUsuario, senhaUsuarioConfirmada) {
     if(senhaUsuario !== senhaUsuarioConfirmada) {
-      alert("As senhas não são iguais")
+      alert("As senhas não coincidem. Tente novamente.")
     }else{
       salvarUsuario(nomeUsuario,emailUsuario, senhaUsuario)
     }
@@ -26,43 +26,42 @@ function CadastroUsuario() {
 
   return(
     <div className={styles.container}>
-      <h1>Se cadastre no nosso site</h1>
+      <h2>Cadastro</h2>
       <form className={styles.formulario}>
-
+      <div/>
       <label>Nome:</label>
-      <br/>
       <input
         type='text'
         name='nomeUsuario'
         onChange={(e)=> setNomeUsuario(e.target.value)}
       ></input>
-      <br/>
+      <div/>
 
+      <div/>
       <label>Email:</label>
-      <br/>
       <input
         type='email'
         name='emailUsuario'
         onChange={(e)=> setEmailUsuario(e.target.value)}
       ></input>
-       <br/>
-
+       <div/>
+       
+       <div/>
       <label>Senha:</label>
-      <br/>
       <input
         type='password'
         name='senhaUsuario'
         onChange={(e)=> setSenhaUsuario(e.target.value)}
       ></input>
-       <br/>
+       <div/>
 
-      <label>Confirmação da Senha:</label>
-      <br/>
+       <div/>
+      <label>Confirmar Senha:</label>
       <input
         type='password'
         name='senhaUsuarioConfirmada'
         onChange={(e)=> setSenhaConfirmada(e.target.value)}
-      ></input><br/>
+      ></input><div/>
       <input type="button" value="Cadastrar" 
           onClick={()=> validacaoSenha(senhaUsuario, senhaUsuarioConfirmada)}  />
       

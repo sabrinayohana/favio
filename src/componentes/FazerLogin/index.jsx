@@ -20,29 +20,29 @@ function FazerLogin() {
 
     return (
         <div className={styles.container}>
-         <h1>Fazer login</h1>
+         <h2>Login</h2>
             <form className={styles.formulario}>
-
+            <div/>
             <label>Email:</label>
-            <br/>
             <input
                 type='text'
                 name="emailUsuario"
                 onChange={(e)=> setEmailUsuario(e.target.value)}
             ></input>
-            <br/>
+            <div/>
 
+            <div/>
             <label>Senha:</label>
-            <br/>
             <input
                 type='password'
                 name="senhaUsuario"
                 onChange={(e=> setSenhaUsuario(e.target.value))}
             ></input>
-            <br/>
+             <div/>
+
             <input
                 type="button"
-                value="Logar"
+                value="Login"
                 onClick={()=> confimarSenha()}
             />
             </form>

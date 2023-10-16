@@ -1,56 +1,53 @@
-import React, { useState } from 'react';
+import styles from './FazerLogin.module.css'
+import { useState } from 'react';
 
-const FazerLogin = ({ usuariosCadastrados, onLogin }) => {
-  const [loginData, setLoginData] = useState({
-    email: '',
-    senha: ''
-  });
+function FazerLogin() {
+    const [emailUsuario, setEmailUsuario] = useState("")
+    const [senhaUsuario, setSenhaUsuario] = useState("")
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setLoginData({ ...loginData, [name]: value });
-  };
+    function confimarSenha() {
+        let usuario = JSON.parse(localStorage.getItem('usuario'))
+        
+        let emailCadastrado = usuario.emailUsuario
+        let senhaCadastrada = usuario.senhaUsuario
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const usuarioEncontrado = usuariosCadastrados.find(
-      (usuario) => usuario.email === loginData.email && usuario.senha === loginData.senha
-    );
-
-    if (usuarioEncontrado) {
-      onLogin(usuarioEncontrado); 
-    } else {
-      alert('Usuário não encontrado. Verifique seu email e senha.');
+        if(emailCadastrado === emailUsuario && senhaCadastrada === senhaUsuario) {
+            alert("Senha correta. Bem vindo ao site")
+        }else{
+            alert("Senha ou email incorretas")
+        }
     }
-  };
 
-  return (
-    <div className="login">
-      <h2> Fazer Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>E-mail:</label>
-          <input 
-          type="email" 
-          name="email" 
-          value={loginData.email} 
-          onChange={handleInputChange} 
-          required />
+    return (
+        <div className={styles.container}>
+         <h1>Fazer login</h1>
+            <form className={styles.formulario}>
+
+            <label>Email:</label>
+            <br/>
+            <input
+                type='text'
+                name="emailUsuario"
+                onChange={(e)=> setEmailUsuario(e.target.value)}
+            ></input>
+            <br/>
+
+            <label>Senha:</label>
+            <br/>
+            <input
+                type='password'
+                name="senhaUsuario"
+                onChange={(e=> setSenhaUsuario(e.target.value))}
+            ></input>
+            <br/>
+            <input
+                type="button"
+                value="Logar"
+                onClick={()=> confimarSenha()}
+            />
+            </form>
         </div>
+    );
+}
 
-        <div className="form-group">
-          <label>Senha:</label>
-          <input 
-          type="password" 
-          name="senha" 
-          value={loginData.senha} 
-          onChange={handleInputChange} 
-          required />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
-};
-
-export default FazerLogin
+export default FazerLogin;

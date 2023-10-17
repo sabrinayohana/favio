@@ -7,7 +7,7 @@ function CadastroUsuario() {
   const [nomeUsuario, setNomeUsuario] = useState("")
   const [emailUsuario, setEmailUsuario] = useState("")
   const [senhaUsuario, setSenhaUsuario] = useState("")
-  const [senhaUsuarioConfirmada, setSenhaConfirmada] = useState("")
+  const [senhaConfirmarSenha, setConfirmarSenha] = useState("")
 
   function salvarUsuario(nomeUsuario, emailUsuario, senhaUsuario) {
     let usuario = {nomeUsuario, emailUsuario, senhaUsuario}
@@ -15,8 +15,8 @@ function CadastroUsuario() {
     localStorage.setItem("usuario", JSON.stringify (usuario))
   }
 
-  function validacaoSenha(senhaUsuario, senhaUsuarioConfirmada) {
-    if(senhaUsuario !== senhaUsuarioConfirmada) {
+  function validarSenha(senhaUsuario, senhaConfirmarSenha) {
+    if(senhaUsuario !== senhaConfirmarSenha) {
       alert("As senhas não coincidem. Tente novamente.")
     }else{
       salvarUsuario(nomeUsuario,emailUsuario, senhaUsuario)
@@ -27,7 +27,7 @@ function CadastroUsuario() {
   return(
     <div className={styles.container}>
       <h2>Cadastro</h2>
-      <form className={styles.formulario}>
+      <form className={styles.form}>
       <div/>
       <label>Nome:</label>
       <input
@@ -59,11 +59,11 @@ function CadastroUsuario() {
       <label>Confirmar Senha:</label>
       <input
         type='password'
-        name='senhaUsuarioConfirmada'
-        onChange={(e)=> setSenhaConfirmada(e.target.value)}
+        name='senhaConfirmarSenha'
+        onChange={(e)=> setConfirmarSenha(e.target.value)}
       ></input><div/>
-      <input type="button" value="Cadastrar" 
-          onClick={()=> validacaoSenha(senhaUsuario, senhaUsuarioConfirmada)}  />
+      <input type="button" value="Salvar" 
+          onClick={()=> validarSenha(senhaUsuario, senhaConfirmarSenha)}  />
       
       </form>
     </div>

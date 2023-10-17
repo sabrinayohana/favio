@@ -21,7 +21,7 @@ function FazerLogin() {
     return (
         <div className={styles.container}>
          <h2>Login</h2>
-            <form className={styles.formulario}>
+            <form className={styles.form}>
             <div/>
             <label>Email:</label>
             <input

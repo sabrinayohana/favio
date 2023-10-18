@@ -20,8 +20,8 @@ function FazerLogin() {
 
     return (
         <div className={styles.container}>
-         <h2>Login</h2>
-            <form className={styles.form}>
+         <h2 className={styles.titulo}>Login</h2>
+            <form className={styles.forms}>
             <div/>
             <label>Email:</label>
             <input

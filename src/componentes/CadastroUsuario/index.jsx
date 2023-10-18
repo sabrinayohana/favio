@@ -26,8 +26,8 @@ function CadastroUsuario() {
 
   return(
     <div className={styles.container}>
-      <h2>Cadastro</h2>
-      <form className={styles.form}>
+      <h2 className={styles.titulo}>Cadastro</h2>
+      <form className={styles.forms}>
       <div/>
       <label>Nome:</label>
       <input

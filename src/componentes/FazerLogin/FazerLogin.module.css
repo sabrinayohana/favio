@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.forms {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid  #1a472a;
+    border-radius: 8px;
+}
+
+.titulo {
+    font-family: 'Courier New', monospace;
+    color: #1a472a; 
+}
+
+body{
+    
+}

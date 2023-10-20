@@ -28,10 +28,10 @@ const Conteudo = () => {
       </ul>
 
       <div className={styles.area}>
-        <h1> Conteudo </h1>
+        <h1 className={styles.titulo}> Conteudo </h1>
         <form className={styles.formulario}>
           <label>
-            <h1>{nomeSite}</h1>
+            <h1 className={styles.nomesite}>{nomeSite}</h1>
           </label>
           <input
             name='nome_site'

@@ -1,18 +1,33 @@
-.area
-{
+.area {
 position:relative;
 left:37%;
 top:29%;
 width:320px;
 height:270px;
 }
-.area .formulario
-{
+
+.area .formulario {
 position:absolute;
 display:block;
+width: 300px;
+padding: 20px;
+border: 1px solid  #1a472a;
+border-radius: 8px;
 }
-fieldset
-{
+
+fieldset {
 width:300px;
 height:250px;
 }
+
+
+ .titulo{
+        font-family: 'Courier New', monospace;
+        color: #1a472a;   
+ }
+
+ .nomesite{
+        font-family: 'Courier New', monospace;
+        color: #1a472a;   
+ }
+

@@ -1,5 +1,6 @@
+import { Routes } from 'react-router-dom';
 import './App.css';
-import Principal from './paginas/Principal';
+import Rotas from './routes'
 
 
 
@@ -8,10 +9,7 @@ Arquivo App JSX
 Componente funcional = Porque ele é uma função
 */
 function App() {
-
-  return ( <Principal/>
-
-  );
+  return  <Rotas/>
 }
 
 export default App;
